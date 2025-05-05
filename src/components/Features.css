@@ -1,0 +1,26 @@
+.features-card {
+  transition: all 0.3s ease;
+  border: 1px solid #eee;
+  border-radius: 20px; /* alternativa ao rounded-4 para maior curva */
+}
+
+.features-card:hover {
+  background-color: #5700f2;
+  color: #fff;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.features-card:hover .features-title,
+.features-card:hover .card-text {
+  color: #fff;
+}
+
+.feature-icon {
+  color: #5700f2;
+  transition: color 0.3s ease;
+}
+
+.features-card:hover .feature-icon {
+  color: #fff;
+}

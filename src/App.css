@@ -36,3 +36,130 @@
     transform: rotate(360deg);
   }
 }
+
+/* Hero Section */
+.hero {
+  background-color: #0077b6;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero .btn {
+  background-color: #ffcb05;
+  color: #333;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+  background-color: #ff9900;
+}
+
+/* Custom Scroll Transitions */
+html {
+  scroll-behavior: smooth;
+}
+
+.features, .plans {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+}
+
+/* Navbar fixed on top */
+header {
+  z-index: 10;
+}
+
+/* FadeIn animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Efeito de hover nos ícones */
+.hover-icon {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.hover-icon:hover {
+  transform: scale(1.2);
+  color: #fff; /* Cor ao passar o mouse */
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  transition: background-color 0.4s, color 0.4s;
+}
+
+body.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+/* Exemplo de estilização específica para componentes no modo escuro */
+body.dark-mode .card {
+  background-color: #2c2c2c;
+  color: #fff;
+  border: 1px solid #444;
+}
+
+
+/* Remover o cursor pointer nos preços */
+#plans .fs-3, /* Preço */
+#plans .text-muted {
+  cursor: default; /* Remover cursor pointer nos preços */
+}
+
+/* Remover o cursor pointer apenas nos elementos <p> e <h> dentro da seção plans */
+#plans p, #plans h1, #plans h2, #plans h3, #plans h4, #plans h5, #plans h6 {
+  cursor: default;
+}
+
+
+/* Manter cursor pointer apenas nos botões e links */
+#plans button, 
+#plans a {
+  cursor: pointer;
+}
+
+/* Remover o cursor pointer nos textos (h5 e p) dos recursos */
+.features-title,
+.card-text {
+  cursor: default; /* Remover o cursor pointer nos textos */
+}
+
+/* Manter cursor pointer apenas nos ícones */
+.feature-icon:hover {
+  color: #fff !important; /* Garantindo que o ícone fique branco no hover */
+  transition: color 0.3s ease;
+}
+
+/* Manter cursor pointer nos links de navegação */
+.nav-link:hover {
+  color: #5700f2 !important;
+  transition: color 0.3s ease;
+}
+
+.whatsapp-float-button:hover {
+  transform: scale(1.1);
+  background-color: #5700f2;
+}
+

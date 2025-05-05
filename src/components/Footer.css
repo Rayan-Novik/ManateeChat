@@ -1,0 +1,14 @@
+.footer {
+    background-image: url('../assets/backgroundboi.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out;
+    color: white;
+  }
+  
+  .footer-logo {
+    height: 60px;
+    margin-bottom: 20px;
+  }
+  

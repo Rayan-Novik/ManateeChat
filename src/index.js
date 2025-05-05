@@ -3,6 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import "bootstrap/dist/css/bootstrap.min.css";
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import 'swiper/css';  // Adicione isso
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // inclui Popper automaticamente
+import 'bootstrap/dist/css/bootstrap.min.css'; // se ainda não estiver usando
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
